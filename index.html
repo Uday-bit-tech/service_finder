@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+
+<head>
+    <title>Service Finder</title>
+</head>
+
+<body>
+    <div class="container">
+    <h1>Welcome to Local Service Finder</h1>
+    <a href="/login">Login</a> |
+
+    <a href="/signup">Signup</a>
+
+    <h2>Signup</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username" required><br>
+        <input type="password" name="password" placeholder="Password" required><br>
+        <button type="submit">Signup</button>
+    </form>
+
+    <h2>Login</h2>
+    <form method="POST">
+        <input type="text" name="username" placeholder="Username"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <h2>Dashboard</h2>
+    <a href="/add_service">Add Service</a><br>
+    <a href="/services">View Services</a>
+
+    <h2>Add Service</h2>
+    <form method="POST">
+        <input type="text" name="name" placeholder="Service Name"><br>
+        <input type="text" name="category" placeholder="Category"><br>
+        <input type="text" name="contact" placeholder="Contact"><br>
+        <button type="submit">Add</button>
+    </form>
+
+    <!-- <h2>All Services</h2>
+
+    {% for service in services %}
+    <p>
+        <b>{{ service.name }}</b><br>
+        Category: {{ service.category }}<br>
+        Contact: {{ service.contact }}
+    </p>
+    <hr>
+    {% endfor %} -->
+    </div>
+</body>
+
+</html>
